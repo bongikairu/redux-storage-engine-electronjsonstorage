@@ -13,7 +13,7 @@ export default (key, backup) => ({
         const jsonState = JSON.stringify(state);
 
         if (backup !== undefined) {
-            return new Promise((resolve) => {
+            return new Promise.Promise((resolve) => {
                 storageSet('backup.' + key, jsonState).then(() => {
                     storageSet(key, jsonState).then(resolve);
                 });
