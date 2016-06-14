@@ -1,6 +1,6 @@
 {
   "name": "redux-storage-engine-electronjsonstorage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "electron-json-storage based engine for redux-storage",
   "main": "build/index.js",
   "jsnext:main": "src/index.js",
@@ -24,6 +24,9 @@
     "src",
     "!**/__tests__/**"
   ],
+  "eslintConfig": {
+    "extends": "michaelcontento"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.4.0",
