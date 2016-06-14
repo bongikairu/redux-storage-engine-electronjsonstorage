@@ -1,7 +1,7 @@
 {
-  "name": "redux-storage-engine-reactnativeasyncstorage",
-  "version": "1.0.1",
-  "description": "react-native/AsyncStorage based engine for redux-storage",
+  "name": "redux-storage-engine-electronjsonstorage",
+  "version": "0.1.0",
+  "description": "electron-json-storage based engine for redux-storage",
   "main": "build/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
@@ -9,24 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelcontento/redux-storage-engine-reactnativeasyncstorage.git"
+    "url": "https://github.com/bongikairu/redux-storage-engine-electronjsonstorage.git"
   },
-  "homepage": "https://github.com/michaelcontento/redux-storage-engine-reactnativeasyncstorage",
+  "homepage": "https://github.com/bongikairu/redux-storage-engine-electronjsonstorage",
   "keywords": [
     "redux",
     "redux-storage",
     "redux-storage-engine",
-    "react-native"
+    "electron-json-storage"
   ],
-  "author": "Michael Contento <michaelcontento@gmail.com>",
+  "author": "Sutas Nakasawek <bongikairu@gmail.com>",
   "files": [
     "build/",
     "src",
     "!**/__tests__/**"
   ],
-  "eslintConfig": {
-    "extends": "michaelcontento"
-  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.4.0",
@@ -38,5 +35,9 @@
     "eslint-plugin-mocha-only": "0.0.3",
     "mocca": "^1.0.3",
     "release-it": "^2.3.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.0",
+    "electron-json-storage": "^2.0.0"
   }
 }

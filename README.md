@@ -1,26 +1,19 @@
-# [redux-storage-engine-reactnativeasyncstorage][]
+# [redux-storage-engine-electronjsonstorage][]
 
-[![build](https://travis-ci.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage.svg?branch=master)](https://travis-ci.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage)
-[![dependencies](https://david-dm.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage.svg)](https://david-dm.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage)
-[![devDependencies](https://david-dm.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage/dev-status.svg)](https://david-dm.org/michaelcontento/redux-storage-engine-reactnativeasyncstorage#info=devDependencies)
+`Electron JSON Storage` based engine for [redux-storage][].
 
-[![license](https://img.shields.io/npm/l/redux-storage-engine-reactnativeasyncstorage.svg?style=flat-square)](https://www.npmjs.com/package/redux-storage-engine-reactnativeasyncstorage)
-[![npm version](https://img.shields.io/npm/v/redux-storage-engine-reactnativeasyncstorage.svg?style=flat-square)](https://www.npmjs.com/package/redux-storage-engine-reactnativeasyncstorage)
-[![npm downloads](https://img.shields.io/npm/dm/redux-storage-engine-reactnativeasyncstorage.svg?style=flat-square)](https://www.npmjs.com/package/redux-storage-engine-reactnativeasyncstorage)
-[![Code Climate](https://codeclimate.com/github/michaelcontento/redux-storage-engine-reactnativeasyncstorage/badges/gpa.svg)](https://codeclimate.com/github/michaelcontento/redux-storage-engine-reactnativeasyncstorage)
-
-`AsyncStorage` based engine for [redux-storage][].
+*Warning* not tested yet
 
 ## Installation
 
-    npm install --save redux-storage-engine-reactnativeasyncstorage
+    npm install --save redux-storage-engine-electronjsonstorage
 
 ## Usage
 
-This will use `AsyncStorage` out of [react-native][].
+This will use `Electron JSON Storage` out of [electron-json-storage][].
 
 ```js
-import createEngine from 'redux-storage-engine-reactnativeasyncstorage';
+import createEngine from 'redux-storage-engine-electronjsonstorage';
 const engine = createEngine('my-save-key');
 ```
 
@@ -28,7 +21,7 @@ const engine = createEngine('my-save-key');
 
     The MIT License (MIT)
 
-    Copyright (c) 2015 Michael Contento
+    Copyright (c) 2016 Sutas Nakasawek
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
@@ -48,5 +41,5 @@ const engine = createEngine('my-save-key');
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   [redux-storage]: https://github.com/michaelcontento/redux-storage
-  [redux-storage-engine-reactnativeasyncstorage]: https://github.com/michaelcontento/redux-storage-engine-reactnativeasyncstorage
-  [react-native]: https://facebook.github.io/react-native/
+  [redux-storage-engine-electronjsonstorage]: https://github.com/bongikairu/redux-storage-engine-electronjsonstorage
+  [electron-json-storage]: https://github.com/jviotti/electron-json-storage
