@@ -1,14 +1,16 @@
 import storage from 'electron-json-storage';
 import * as Promise from 'bluebird';
-Promise.promisifyAll(storage);
+
+const storageGet = Promise.promisify(storage.get);
+const storageSet = Promise.promisify(storage.set);
 
 export default (key) => ({
     load() {
-        return storage.get(key).then((jsonState) => JSON.parse(jsonState) || {});
+        return storageGet(key).then((jsonState) => JSON.parse(jsonState) || {});
     },
 
     save(state) {
         const jsonState = JSON.stringify(state);
-        return storage.set(key, jsonState);
+        return storageSet(key, jsonState);
     }
 });
